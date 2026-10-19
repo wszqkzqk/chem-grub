@@ -26,8 +26,6 @@ scientist with safety goggles, a lab coat, and a bubbling flask.
   1080p, plus scrolling for longer lists.
 - **Complete resources:** 76 class icons, selection and menu nine-slice images,
   timeout styling, and a bilingual-capable terminal font.
-- **Reproducible packaging:** source artwork, bundled font licenses, previews,
-  CI, and a zip-building Makefile target.
 
 The theme does not modify Arch or grub-btrfs generator scripts.
 
@@ -40,9 +38,6 @@ Download the automatically updated [latest development build](https://github.com
 ```sh
 sudo ./chem-grub/install.sh
 ```
-
-This is a rolling prerelease updated by CI; CI artifacts are for verification
-only, not the user download channel.
 
 The installer detects `/boot/grub` or `/boot/grub2`, copies the theme, backs up
 `/etc/default/grub` and the existing generated configuration, enables the
@@ -132,8 +127,7 @@ dist/                Generated theme and zip (not committed)
 
 Bug reports and pull requests are welcome. Please read
 [CONTRIBUTING.md](CONTRIBUTING.md) and the
-[Code of Conduct](CODE_OF_CONDUCT.md). Development history is recorded in
-[commit messages](https://github.com/wszqkzqk/chem-grub/commits/main).
+[Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## License and credits
 

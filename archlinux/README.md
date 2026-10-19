@@ -4,10 +4,8 @@
 complete theme under `/boot/grub/themes/chem-grub`. It does not change the
 bootloader configuration during package installation.
 
-A prebuilt package is also available from the automatically updated
+A prebuilt package is also available from the
 [latest development build](https://github.com/wszqkzqk/chem-grub/releases/tag/latest).
-CI artifacts are for verification only; the rolling release is the download
-channel for users.
 
 ## Build and install a package
 

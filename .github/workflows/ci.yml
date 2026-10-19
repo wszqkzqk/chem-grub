@@ -104,6 +104,7 @@ jobs:
       - name: Publish latest development build
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
         run: |
           set -eu
           if ! gh release view latest >/dev/null 2>&1; then
