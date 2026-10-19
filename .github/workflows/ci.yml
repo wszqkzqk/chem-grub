@@ -86,3 +86,38 @@ jobs:
           name: chem-grub-archlinux-${{ github.sha }}
           path: archlinux/*.pkg.tar.zst
           if-no-files-found: error
+
+  publish:
+    name: Publish rolling release
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: [build, arch-package]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v7
+        with:
+          path: release-files
+          merge-multiple: true
+
+      - name: Publish latest development build
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -eu
+          if ! gh release view latest >/dev/null 2>&1; then
+            gh release create latest \
+              --title "Latest development build" \
+              --notes "Rolling build from commit ${GITHUB_SHA}." \
+              --prerelease \
+              --target "${GITHUB_SHA}"
+          fi
+          gh api "repos/${GITHUB_REPOSITORY}/git/refs/tags/latest" \
+            --method PATCH \
+            -F sha="${GITHUB_SHA}" \
+            -F force=true
+          gh release upload latest release-files/* --clobber
+          gh release edit latest \
+            --title "Latest development build" \
+            --notes "Rolling build from commit ${GITHUB_SHA}. This prerelease is updated automatically on every push to main; it is not a semantic-version release."

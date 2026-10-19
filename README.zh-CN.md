@@ -30,11 +30,13 @@
 
 ### 使用主题压缩包
 
-从 [CI 构建](https://github.com/wszqkzqk/chem-grub/actions) 下载并解压 `chem-grub.zip`，然后运行：
+下载自动更新的 [最新开发构建](https://github.com/wszqkzqk/chem-grub/releases/tag/latest)，解压后运行：
 
 ```sh
 sudo ./chem-grub/install.sh
 ```
+
+这是由 CI 自动更新的滚动预发布版本；CI artifacts 仅用于验证，不作为用户下载渠道。
 
 安装器会检测 `/boot/grub` 或 `/boot/grub2`，复制主题，备份
 `/etc/default/grub` 和已有的生成配置，启用主题并重新生成 GRUB 配置，

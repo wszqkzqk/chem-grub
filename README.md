@@ -35,11 +35,14 @@ The theme does not modify Arch or grub-btrfs generator scripts.
 
 ### From a packaged theme
 
-Download `chem-grub.zip` from a [CI build](https://github.com/wszqkzqk/chem-grub/actions), extract it, and run:
+Download the automatically updated [latest development build](https://github.com/wszqkzqk/chem-grub/releases/tag/latest), extract it, and run:
 
 ```sh
 sudo ./chem-grub/install.sh
 ```
+
+This is a rolling prerelease updated by CI; CI artifacts are for verification
+only, not the user download channel.
 
 The installer detects `/boot/grub` or `/boot/grub2`, copies the theme, backs up
 `/etc/default/grub` and the existing generated configuration, enables the
