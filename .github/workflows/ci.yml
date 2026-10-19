@@ -118,7 +118,12 @@ jobs:
             --method PATCH \
             -F sha="${GITHUB_SHA}" \
             -F force=true
-          gh release upload latest release-files/* --clobber
+          mapfile -d '' -t files < <(find release-files -type f \( -name 'chem-grub.zip' -o -name '*.pkg.tar.zst' \) -print0)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No distributable files found"
+            exit 1
+          fi
+          gh release upload latest --clobber "${files[@]}"
           gh release edit latest \
             --title "Latest development build" \
             --notes "Rolling build from commit ${GITHUB_SHA}. This prerelease is updated automatically on every push to main; it is not a semantic-version release."
