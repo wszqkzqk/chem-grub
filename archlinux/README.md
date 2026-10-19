@@ -16,7 +16,9 @@ sudo pacman -U ./chem-grub-*.pkg.tar.zst
 ```
 
 `makepkg` runs `make` and `make check`, including the CJK font and localization
-validation. The package is architecture-independent (`any`).
+validation. `package()` uses `make install DESTDIR="${pkgdir}"` for a staged
+installation; it never invokes the host configurator. The package is
+architecture-independent (`any`).
 
 After installing the package, either enable the theme with the included
 installer:

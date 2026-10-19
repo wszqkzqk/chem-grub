@@ -14,6 +14,7 @@ follows semantic versioning.
 - Moved the notebook's NOTES label into the right page's top margin.
 - Relaxed build dependency constraints to allow newer Pillow and fontTools
   releases on rolling-release distributions.
+- Added DESTDIR-based staged installation for package builds.
 
 ## [1.0.0] - 2026-10-19
 

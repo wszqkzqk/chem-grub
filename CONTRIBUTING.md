@@ -41,6 +41,8 @@ with `make docs`.
 - Preserve font names, glyph coverage, and license notices when updating fonts.
 - Keep installation changes reversible and preserve the existing backup and
   dry-run behavior. Never require a user's real boot configuration for a test.
+- Use `make install DESTDIR=...` for staged package installs; keep host
+  enablement in `scripts/install.sh`.
 
 ## Bug reports
 
