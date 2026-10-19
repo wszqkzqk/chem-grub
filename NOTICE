@@ -7,6 +7,8 @@ Public License version 2 or (at your option) any later version
 (GPL-2.0-or-later), as specified in LICENSE. Third-party fonts retain their
 own licenses.
 
+SPDX-License-Identifier: GPL-2.0-or-later
+
 Bundled fonts:
 - Noto Sans Mono CJK SC, from the Noto CJK project.
   Source: https://github.com/notofonts/noto-cjk
