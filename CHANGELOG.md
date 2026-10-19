@@ -12,6 +12,8 @@ follows semantic versioning.
 - Aligned the goggle bridge, eye midpoint, and mouth on the mascot's vertical
   centerline.
 - Moved the notebook's NOTES label into the right page's top margin.
+- Relaxed build dependency constraints to allow newer Pillow and fontTools
+  releases on rolling-release distributions.
 
 ## [1.0.0] - 2026-10-19
 

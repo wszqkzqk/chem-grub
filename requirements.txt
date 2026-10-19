@@ -1,2 +1,2 @@
-Pillow>=10.0,<13
-fontTools>=4.40,<5
+Pillow>=10.0
+fontTools>=4.40
