@@ -3,8 +3,8 @@
 [![CI](https://github.com/wszqkzqk/chem-grub/actions/workflows/ci.yml/badge.svg)](https://github.com/wszqkzqk/chem-grub/actions/workflows/ci.yml)
 [![许可证：GPLv2+](https://img.shields.io/badge/license-GPLv2%2B-blue.svg)](LICENSE)
 
-一套以化学实验室为主题的 GRUB2 主题。吉祥物 **Chem Grub** 是一只戴护目镜、
-穿实验服、抱着冒泡锥形瓶的幼虫。
+一套以化学实验室为主题的 GRUB2 主题。吉祥物 **Chem Grub（化蛆）** 是一只戴护目镜、
+穿实验服、抱着冒泡锥形瓶的蛆。
 
 ![Chemistry GRUB 预览](docs/images/preview.png)
 
