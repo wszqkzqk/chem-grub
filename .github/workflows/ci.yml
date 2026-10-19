@@ -119,5 +119,5 @@ jobs:
             release-files/dist/chem-grub.zip
             release-files/*.pkg.tar.zst
           generate_release_notes: true
-          prerelease: true
+          prerelease: false
           fail_on_unmatched_files: true
