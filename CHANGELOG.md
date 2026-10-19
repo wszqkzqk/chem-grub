@@ -3,6 +3,15 @@
 All notable changes to Chemistry GRUB will be documented here. The project
 follows semantic versioning.
 
+## [Unreleased]
+
+### Changed
+
+- Refined the mascot's eyewear into one-piece laboratory safety goggles with
+  side shields and a head strap.
+- Aligned the goggle bridge, eye midpoint, and mouth on the mascot's vertical
+  centerline.
+
 ## [1.0.0] - 2026-10-19
 
 ### Added
