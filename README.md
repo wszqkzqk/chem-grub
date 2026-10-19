@@ -35,7 +35,7 @@ The theme does not modify Arch or grub-btrfs generator scripts.
 
 ### From a packaged theme
 
-Download `chem-grub.zip` from a release, extract it, and run:
+Download `chem-grub.zip` from a [CI build](https://github.com/wszqkzqk/chem-grub/actions), extract it, and run:
 
 ```sh
 sudo ./chem-grub/install.sh
@@ -121,7 +121,7 @@ src/                 Background, theme, fonts, and preview translations
 scripts/             Build and installation scripts
 archlinux/           Arch Linux PKGBUILD and packaging notes
 docs/                Community documentation and reference images
-.github/             CI, release automation, and contribution templates
+.github/             CI and contribution templates
 dist/                Generated theme and zip (not committed)
 ```
 
@@ -129,8 +129,8 @@ dist/                Generated theme and zip (not committed)
 
 Bug reports and pull requests are welcome. Please read
 [CONTRIBUTING.md](CONTRIBUTING.md) and the
-[Code of Conduct](CODE_OF_CONDUCT.md). Notable changes are recorded in
-[CHANGELOG.md](CHANGELOG.md).
+[Code of Conduct](CODE_OF_CONDUCT.md). Development history is recorded in
+[commit messages](https://github.com/wszqkzqk/chem-grub/commits/main).
 
 ## License and credits
 

@@ -9,4 +9,4 @@ https://github.com/wszqkzqk/chem-grub/issues. Do not include passwords, private
 keys, recovery codes, or other secrets in a report. Ask for a private contact
 route if a report needs sensitive reproduction details.
 
-Only the latest release is supported with fixes.
+The latest build on the main branch is supported with fixes.

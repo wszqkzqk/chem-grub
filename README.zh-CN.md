@@ -30,7 +30,7 @@
 
 ### 使用主题压缩包
 
-下载并解压 `chem-grub.zip`，然后运行：
+从 [CI 构建](https://github.com/wszqkzqk/chem-grub/actions) 下载并解压 `chem-grub.zip`，然后运行：
 
 ```sh
 sudo ./chem-grub/install.sh
@@ -109,7 +109,7 @@ src/                 背景、主题、字体和预览翻译
 scripts/             构建与安装脚本
 archlinux/           Arch Linux PKGBUILD 与打包说明
 docs/                社区文档与参考图片
-.github/             CI、发布流程和贡献模板
+.github/             CI 和贡献模板
 dist/                构建产物，不提交到 Git
 ```
 
@@ -117,7 +117,7 @@ dist/                构建产物，不提交到 Git
 
 欢迎提交 Issue 和 Pull Request，请先阅读
 [贡献指南](CONTRIBUTING.md) 和 [行为准则](CODE_OF_CONDUCT.md)。
-重要变更记录在 [CHANGELOG.md](CHANGELOG.md)。
+变更历史见 [Git 提交记录](https://github.com/wszqkzqk/chem-grub/commits/main)。
 
 项目代码和原创图形采用 [GNU General Public License v2 或更高版本（GPL-2.0-or-later）](LICENSE)。
 版权署名：Copyright (C) 2026 Zhou Qiankang <wszqkzqk@qq.com>。
