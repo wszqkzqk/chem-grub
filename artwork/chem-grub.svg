@@ -97,7 +97,7 @@
       <circle cx="187" cy="683" r="10" fill="#d0ead1"/>
       <path d="M259 694 L321 694 M259 715 L306 715 M259 736 L326 736"/>
     </g>
-    <text x="294" y="654" fill="#568b7c" stroke="none" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="2">NOTES</text>
+    <text x="291" y="680" fill="#568b7c" stroke="none" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="12" letter-spacing="2">NOTES</text>
 
     <g transform="rotate(-35 175 704)">
       <path d="M102 693 L239 693 L239 712 L102 712Z" fill="#f5ad62" stroke-width="5"/>

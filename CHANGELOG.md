@@ -11,6 +11,7 @@ follows semantic versioning.
   side shields and a head strap.
 - Aligned the goggle bridge, eye midpoint, and mouth on the mascot's vertical
   centerline.
+- Moved the notebook's NOTES label into the right page's top margin.
 
 ## [1.0.0] - 2026-10-19
 
