@@ -33,7 +33,7 @@ The theme does not modify Arch or grub-btrfs generator scripts.
 
 ### From a packaged theme
 
-Download the automatically updated [latest development build](https://github.com/wszqkzqk/chem-grub/releases/tag/latest), extract it, and run:
+Download the latest development build from [Releases](https://github.com/wszqkzqk/chem-grub/releases), extract it, and run:
 
 ```sh
 sudo ./chem-grub/install.sh

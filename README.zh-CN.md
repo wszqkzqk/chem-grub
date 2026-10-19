@@ -29,7 +29,7 @@
 
 ### 使用主题压缩包
 
-下载自动更新的 [最新开发构建](https://github.com/wszqkzqk/chem-grub/releases/tag/latest)，解压后运行：
+从 [Releases](https://github.com/wszqkzqk/chem-grub/releases) 下载最新开发构建，解压后运行：
 
 ```sh
 sudo ./chem-grub/install.sh

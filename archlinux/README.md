@@ -5,7 +5,7 @@ complete theme under `/boot/grub/themes/chem-grub`. It does not change the
 bootloader configuration during package installation.
 
 A prebuilt package is also available from the
-[latest development build](https://github.com/wszqkzqk/chem-grub/releases/tag/latest).
+[Releases page](https://github.com/wszqkzqk/chem-grub/releases).
 
 ## Build and install a package
 
@@ -22,7 +22,8 @@ sudo pacman -U ./chem-grub-*.pkg.tar.zst
 validation. `package()` uses `make install DESTDIR="${pkgdir}"` for a staged
 installation; it never invokes the host configurator. The package is
 architecture-independent (`any`). Its version is generated as
-`r<commit-count>.<yyyymmdd>.<short-sha>`, so no release tags are required.
+`r<commit-count>.<yyyymmdd>.<short-sha>`, and CI creates the corresponding
+release tag automatically.
 
 After installing the package, either enable the theme with the included
 installer:

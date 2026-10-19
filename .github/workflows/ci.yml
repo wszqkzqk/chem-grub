@@ -88,49 +88,36 @@ jobs:
           if-no-files-found: error
 
   publish:
-    name: Publish rolling release
+    name: Publish commit release
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: [build, arch-package]
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
+      - name: Check out source
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Compute the commit version
+        id: version
+        run: echo "version=r$(git rev-list --count HEAD).$(git log -1 --format=%cd --date=format:%Y%m%d).$(git rev-parse --short HEAD)" >> "$GITHUB_OUTPUT"
+
       - name: Download build artifacts
         uses: actions/download-artifact@v7
         with:
           path: release-files
           merge-multiple: true
 
-      - name: Publish latest development build
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_REPO: ${{ github.repository }}
-        run: |
-          set -eu
-          if ! gh release view latest >/dev/null 2>&1; then
-            gh release create latest \
-              --title "Latest development build" \
-              --notes "Rolling build from commit ${GITHUB_SHA}." \
-              --prerelease \
-              --target "${GITHUB_SHA}"
-          fi
-          gh api "repos/${GITHUB_REPOSITORY}/git/refs/tags/latest" \
-            --method PATCH \
-            -F sha="${GITHUB_SHA}" \
-            -F force=true
-          mapfile -d '' -t files < <(find release-files -type f \( -name 'chem-grub.zip' -o -name '*.pkg.tar.zst' \) -print0)
-          if [ "${#files[@]}" -eq 0 ]; then
-            echo "No distributable files found"
-            exit 1
-          fi
-          release_id=$(gh api "repos/${GITHUB_REPOSITORY}/releases/tags/latest" --jq '.id')
-          for asset_id in $(gh api "repos/${GITHUB_REPOSITORY}/releases/${release_id}/assets" --paginate --jq '.[] | select(.name | endswith(".pkg.tar.zst")) | .id'); do
-            gh api "repos/${GITHUB_REPOSITORY}/releases/assets/${asset_id}" --method DELETE
-          done
-          gh release upload latest --clobber "${files[@]}"
-          gh release edit latest \
-            --title "Latest development build" \
-            --notes "Rolling build from commit ${GITHUB_SHA}. This prerelease is updated automatically on every push to main; it is not a semantic-version release."
-          gh api "repos/${GITHUB_REPOSITORY}/releases/${release_id}" \
-            --method PATCH \
-            -F target_commitish="${GITHUB_SHA}"
+      - name: Create the commit release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ steps.version.outputs.version }}
+          name: Chemistry GRUB ${{ steps.version.outputs.version }}
+          files: |
+            release-files/dist/chem-grub.zip
+            release-files/*.pkg.tar.zst
+          generate_release_notes: true
+          prerelease: true
+          fail_on_unmatched_files: true
