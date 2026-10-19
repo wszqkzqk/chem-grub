@@ -117,7 +117,6 @@ dist/                构建产物，不提交到 Git
 
 欢迎提交 Issue 和 Pull Request，请先阅读
 [贡献指南](CONTRIBUTING.md) 和 [行为准则](CODE_OF_CONDUCT.md)。
-变更历史见 [Git 提交记录](https://github.com/wszqkzqk/chem-grub/commits/main)。
 
 项目代码和原创图形采用 [GNU General Public License v2 或更高版本（GPL-2.0-or-later）](LICENSE)。
 版权署名：Copyright (C) 2026 Zhou Qiankang <wszqkzqk@qq.com>。
