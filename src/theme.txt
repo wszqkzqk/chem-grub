@@ -1,0 +1,74 @@
+# Copyright (C) 2026 Zhou Qiankang <wszqkzqk@qq.com>
+# SPDX-License-Identifier: GPL-2.0-or-later
+
+title-font: "Noto Sans Mono CJK SC 20"
+title-color: "#8fb5a8"
+message-font: "Noto Sans Mono CJK SC 20"
+message-color: "#e7f2e7"
+message-bg-color: "#081b20"
+desktop-image: "background.png"
+desktop-image-scale-method: "crop"
+desktop-image-h-align: "center"
+desktop-image-v-align: "center"
+desktop-color: "#07191d"
+terminal-font: "Noto Sans Mono CJK SC 20"
+terminal-box: "terminal_*.png"
+terminal-left: "5%"
+terminal-top: "8%"
+terminal-width: "90%"
+terminal-height: "82%"
+terminal-border: "0"
+
++ boot_menu {
+  left = 5%
+  top = 32%
+  width = 59%
+  height = 52%
+  item_font = "Noto Sans Mono CJK SC 20"
+  selected_item_font = "Noto Sans Mono CJK SC 20"
+  item_color = "#c6d9cf"
+  selected_item_color = "#103a32"
+  item_height = 38
+  item_padding = 10
+  item_spacing = 6
+  icon_width = 28
+  icon_height = 28
+  item_icon_space = 14
+  menu_pixmap_style = "menu_*.png"
+  selected_item_pixmap_style = "select_*.png"
+  scrollbar = true
+  scrollbar_width = 6
+  scrollbar_slice = "center"
+  scrollbar_left_pad = 12
+  scrollbar_right_pad = 10
+  scrollbar_top_pad = 8
+  scrollbar_bottom_pad = 8
+  scrollbar_frame = "scrollbar_frame_*.png"
+  scrollbar_thumb = "scrollbar_thumb_*.png"
+  scrollbar_thumb_overlay = true
+}
+
++ progress_bar {
+  id = "__timeout__"
+  left = 6%
+  top = 89%
+  width = 54%
+  height = 32
+  font = "Noto Sans Mono CJK SC 18"
+  text = "@TIMEOUT_NOTIFICATION_MIDDLE@"
+  text_color = "#e5efdf"
+  border_color = "#35594d"
+  bg_color = "#173832"
+  fg_color = "#3f8069"
+}
+
++ label {
+  left = 6%
+  top = 94%
+  width = 88%
+  height = 28
+  font = "Noto Sans Mono CJK SC 18"
+  text = "@KEYMAP_SHORT@"
+  color = "#83aa9c"
+  align = "left"
+}

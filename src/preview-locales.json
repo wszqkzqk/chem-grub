@@ -1,0 +1,47 @@
+{
+  "en_US": {
+    "title": "GRUB Boot Menu",
+    "keymap": "enter: boot, `e': options, `c': cmd-line",
+    "timeout": "%ds remaining."
+  },
+  "zh_CN": {
+    "title": "GRUB 引导菜单",
+    "keymap": "enter: 引导、\"e\": 选项、\"c\": 命令行",
+    "timeout": "剩余 %d 秒。"
+  },
+  "zh_TW": {
+    "title": "GRUB 開機選單",
+    "keymap": "enter：啟動，「e」：選項，「c」：命令列",
+    "timeout": "剩下 %d 秒。"
+  },
+  "de_DE": {
+    "title": "GRUB-Bootmenü",
+    "keymap": "Enter: Booten, »e«: Optionen, »c«: Befehlszeile",
+    "timeout": "%ds verbleibend."
+  },
+  "fr_FR": {
+    "title": "Menu de démarrage GRUB",
+    "keymap": "Entrée : démarrage, « e » : option, « c » : invite de commandes",
+    "timeout": "Plus que %d s."
+  },
+  "es_ES": {
+    "title": "Menú de arranque de GRUB",
+    "keymap": "intro: arrancar, «e»: opciones, «c»: línea de órdenes",
+    "timeout": "faltan %d s."
+  },
+  "ru_RU": {
+    "title": "Загрузочное меню GRUB",
+    "keymap": "«enter»: загрузка, «e»: параметры, «c»: командная строка",
+    "timeout": "осталось %dс."
+  },
+  "ko_KR": {
+    "title": "GRUB 부팅 메뉴",
+    "keymap": "Enter: 부팅, `e': 옵션, `c': 명령행",
+    "timeout": "%d초 남음."
+  },
+  "ja_JP": {
+    "title": "GRUB ブートメニュー",
+    "keymap": "enter: boot, `e': options, `c': cmd-line",
+    "timeout": "%ds remaining."
+  }
+}

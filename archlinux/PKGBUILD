@@ -1,0 +1,39 @@
+# Maintainer: Zhou Qiankang <wszqkzqk@qq.com>
+
+pkgname=chem-grub
+pkgver=0.0.0
+pkgrel=1
+pkgdesc='Chemistry-inspired GRUB2 theme with native localization and CJK support'
+arch=('any')
+url='https://github.com/wszqkzqk/chem-grub'
+license=('GPL-2.0-or-later')
+depends=('grub')
+makedepends=('git' 'librsvg' 'make' 'python' 'python-fonttools' 'python-pillow')
+source=("${pkgname}::git+file://${startdir}/..")
+sha256sums=('SKIP')
+
+pkgver() {
+    cd "${pkgname}"
+    git describe --tags --always --dirty --abbrev=12 | sed 's/^v//;s/-/./g'
+}
+
+build() {
+    cd "${pkgname}"
+    make
+}
+
+check() {
+    cd "${pkgname}"
+    make check
+}
+
+package() {
+    cd "${pkgname}"
+    install -dm755 "${pkgdir}/boot/grub/themes/chem-grub"
+    cp -a dist/chem-grub/. "${pkgdir}/boot/grub/themes/chem-grub/"
+    install -Dm644 LICENSE "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+    install -Dm644 NOTICE "${pkgdir}/usr/share/licenses/${pkgname}/NOTICE"
+    install -Dm644 README.md "${pkgdir}/usr/share/doc/${pkgname}/README.md"
+    install -Dm644 README.zh-CN.md "${pkgdir}/usr/share/doc/${pkgname}/README.zh-CN.md"
+    install -Dm644 docs/VALIDATION.md "${pkgdir}/usr/share/doc/${pkgname}/VALIDATION.md"
+}

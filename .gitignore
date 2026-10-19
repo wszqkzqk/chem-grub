@@ -1,0 +1,16 @@
+.build/
+dist/
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+preview.png
+preview-nested.png
+preview-arch.png
+preview-de.png
+!docs/images/*.png
+artwork/chem-grub.png
+*.bak
+*.tmp
+*.swp
+*.swo

@@ -1,0 +1,28 @@
+Chemistry GRUB
+
+Copyright (C) 2026 Zhou Qiankang <wszqkzqk@qq.com>
+
+Project code and original artwork are distributed under the GNU General
+Public License version 2 or (at your option) any later version
+(GPL-2.0-or-later), as specified in LICENSE. Third-party fonts retain their
+own licenses.
+
+Bundled fonts:
+- Noto Sans Mono CJK SC, from the Noto CJK project.
+  Source: https://github.com/notofonts/noto-cjk
+  License: SIL Open Font License 1.1; see src/fonts/NotoSansCJK-OFL.txt.
+- Space Grotesk, from the Google Fonts project.
+  Source: https://github.com/google/fonts/tree/main/ofl/spacegrotesk
+  License: SIL Open Font License 1.1; see src/fonts/SpaceGrotesk-OFL.txt.
+- IBM Plex Mono, from IBM.
+  Source: https://github.com/google/fonts/tree/main/ofl/ibmplexmono
+  License: SIL Open Font License 1.1; see src/fonts/IBMPlexMono-OFL.txt.
+
+The short preview translations in src/preview-locales.json are based on the
+GRUB translation files published by the Translation Project:
+https://translationproject.org/latest/grub/
+They are used to render examples only; the installed theme uses GRUB's native
+translation placeholders. GRUB itself is licensed under GPLv3 or later:
+https://www.gnu.org/licenses/gpl-3.0.html
+
+No GRUB binaries or GRUB source code are bundled in this project.

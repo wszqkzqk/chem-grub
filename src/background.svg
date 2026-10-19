@@ -1,0 +1,98 @@
+<!-- Copyright (C) 2026 Zhou Qiankang <wszqkzqk@qq.com> -->
+<!-- SPDX-License-Identifier: GPL-2.0-or-later -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Chemistry GRUB laboratory</title>
+  <desc id="desc">A midnight-teal chemistry laboratory with molecular sketches and Chem Grub, a studious grub scientist.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c2428"/>
+      <stop offset="0.52" stop-color="#081b20"/>
+      <stop offset="1" stop-color="#051418"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#285b50" stop-opacity="0.58"/>
+      <stop offset="0.64" stop-color="#163c37" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#0b2427" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eff7e8"/>
+      <stop offset="1" stop-color="#c8edbd"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#9ad9bd" stroke-width="1" opacity="0.045"/>
+      <circle cx="0" cy="0" r="1.5" fill="#a5e6c7" opacity="0.09"/>
+    </pattern>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#b7e8ce" opacity="0.12"/>
+    </pattern>
+    <filter id="soft-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#background)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  <path d="M-80 884 C260 732 438 1032 779 896 C1062 785 1244 852 1378 1038 L1378 1120H-80Z" fill="#0d2b2c" opacity="0.35"/>
+  <path d="M-60 935 C262 802 465 1056 766 945" fill="none" stroke="#407365" stroke-width="2" opacity="0.13"/>
+  <path d="M-40 980 C250 872 454 1080 693 1004" fill="none" stroke="#407365" stroke-width="2" opacity="0.09"/>
+
+  <circle cx="1514" cy="520" r="406" fill="url(#halo)"/>
+  <circle cx="1514" cy="520" r="316" fill="url(#dots)" opacity="0.52"/>
+  <g fill="none" stroke="#75bda5" stroke-width="2" opacity="0.16">
+    <ellipse cx="1514" cy="520" rx="353" ry="145" transform="rotate(-26 1514 520)"/>
+    <ellipse cx="1514" cy="520" rx="353" ry="145" transform="rotate(33 1514 520)"/>
+    <circle cx="1514" cy="520" r="329" stroke-dasharray="2 15"/>
+  </g>
+  <circle cx="1202" cy="355" r="7" fill="#c8f19a" opacity="0.62"/>
+  <circle cx="1790" cy="656" r="8" fill="#6ce2bf" opacity="0.56"/>
+  <circle cx="1703" cy="218" r="6" fill="#efad69" opacity="0.7"/>
+
+  <g transform="translate(96 48)">
+    <rect width="36" height="36" rx="11" fill="#b9ecaa"/>
+    <path d="M14 8V16L8 26Q7 29 11 29H25Q29 29 27 26L22 16V8M12 8H24M11 23H25" fill="none" stroke="#153e37" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="18" cy="25" r="1.5" fill="#153e37"/>
+  </g>
+  <text x="92" y="157" fill="#d6e8dc" font-family="Space Grotesk, sans-serif" font-size="43" font-weight="500" letter-spacing="9">CHEMISTRY</text>
+  <text x="84" y="266" fill="url(#brand)" font-family="Space Grotesk, sans-serif" font-size="122" font-weight="700" letter-spacing="-5">GRUB</text>
+  <circle cx="408" cy="245" r="10" fill="#c6f295"/>
+
+  <g transform="translate(682 158)" fill="none" stroke="#4e8171" stroke-width="3" opacity="0.37">
+    <path d="M0 0L58-33L116 0V67L58 101L0 67Z"/>
+    <circle cx="58" cy="34" r="42"/>
+    <path d="M116 0L169-31M0 67L-50 97M58 101V155"/>
+    <circle cx="180" cy="-38" r="13" fill="#102d2c"/>
+    <circle cx="-59" cy="103" r="10" fill="#102d2c"/>
+    <circle cx="58" cy="165" r="10" fill="#102d2c"/>
+  </g>
+  <g fill="#77a696" font-family="IBM Plex Mono, monospace" font-size="15" text-anchor="middle" opacity="0.62">
+    <text x="862" y="125">O</text>
+    <text x="623" y="266">H</text>
+    <text x="740" y="328">N</text>
+  </g>
+
+  <g transform="translate(1790 67)" fill="none" stroke="#648c80" stroke-width="1.5" opacity="0.85">
+    <ellipse rx="30" ry="9"/>
+    <ellipse rx="30" ry="9" transform="rotate(60)"/>
+    <ellipse rx="30" ry="9" transform="rotate(-60)"/>
+  </g>
+  <circle cx="1790" cy="67" r="4" fill="#c5ef91"/>
+  <circle cx="1820" cy="67" r="3" fill="#c5ef91"/>
+  <circle cx="1775" cy="41" r="3" fill="#70d8b8"/>
+  <circle cx="1805" cy="93" r="3" fill="#c5ef91"/>
+  <circle cx="1820" cy="67" r="9" fill="#c5ef91" opacity="0.16" filter="url(#soft-glow)"/>
+
+  <g opacity="0.23" fill="none" stroke="#78b49d" stroke-width="3">
+    <path d="M1125 132L1154 115L1183 132V164L1154 181L1125 164Z"/>
+    <path d="M1183 132L1214 114M1125 164L1097 181"/>
+    <circle cx="1224" cy="108" r="8"/>
+    <circle cx="1087" cy="188" r="8"/>
+  </g>
+
+  <image x="1195" y="165" width="650" height="736" xlink:href="../artwork/chem-grub.svg"/>
+
+  <text x="1520" y="953" text-anchor="middle" fill="#d8eadb" font-family="Space Grotesk, sans-serif" font-size="26" font-weight="700" letter-spacing="4">CHEM GRUB</text>
+
+  <path d="M1818 940V983H1776" fill="none" stroke="#375e52" stroke-width="2"/>
+  <path d="M96 1038H1818" stroke="#284b43" stroke-width="1" opacity="0.65"/>
+  <rect x="0" y="1076" width="1920" height="4" fill="#a9d98f" opacity="0.7"/>
+</svg>
